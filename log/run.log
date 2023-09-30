@@ -1,0 +1,530 @@
+rm -f bin/csf bin/csf.o
+rm -rf bin/x86_64/linux/release/csf
+/opt/cuda/bin/nvcc -ccbin g++ -I./Common -I./Common/UtilNPP -m64 --threads 0 -gencode arch=compute_86,code=compute_86 -o bin/csf.o -c src/csf.cpp
+/opt/cuda/bin/nvcc -ccbin g++ -m64 -gencode arch=compute_86,code=compute_86 -o bin/csf bin/csf.o -lnppisu_static -lnppif_static -lnppc_static -lculibos -lfreeimage
+mkdir -p bin/x86_64/linux/release
+cp bin/csf bin/x86_64/linux/release
+bin/csf Starting...
+
+GPU Device 0: "Ampere" with compute capability 8.6
+
+NPP Library Version 12.1.1
+  CUDA Driver  Version: 12.2
+  CUDA Runtime Version: 12.2
+  Device 0: <          Ampere >, Compute SM 8.6 detected
+Processing: "data/input/4.1.02.pgm"
+csf opened: "data/input/4.1.02.pgm" successfully!
+Saved image: "data/output/4.1.02_csf.pgm"
+Processing: "data/input/4.1.03.pgm"
+csf opened: "data/input/4.1.03.pgm" successfully!
+Saved image: "data/output/4.1.03_csf.pgm"
+Processing: "data/input/4.1.04.pgm"
+csf opened: "data/input/4.1.04.pgm" successfully!
+Saved image: "data/output/4.1.04_csf.pgm"
+Processing: "data/input/4.1.05.pgm"
+csf opened: "data/input/4.1.05.pgm" successfully!
+Saved image: "data/output/4.1.05_csf.pgm"
+Processing: "data/input/4.1.06.pgm"
+csf opened: "data/input/4.1.06.pgm" successfully!
+Saved image: "data/output/4.1.06_csf.pgm"
+Processing: "data/input/4.1.07.pgm"
+csf opened: "data/input/4.1.07.pgm" successfully!
+Saved image: "data/output/4.1.07_csf.pgm"
+Processing: "data/input/4.1.08.pgm"
+csf opened: "data/input/4.1.08.pgm" successfully!
+Saved image: "data/output/4.1.08_csf.pgm"
+Processing: "data/input/4.2.01.pgm"
+csf opened: "data/input/4.2.01.pgm" successfully!
+Saved image: "data/output/4.2.01_csf.pgm"
+Processing: "data/input/4.2.03.pgm"
+csf opened: "data/input/4.2.03.pgm" successfully!
+Saved image: "data/output/4.2.03_csf.pgm"
+Processing: "data/input/4.2.05.pgm"
+csf opened: "data/input/4.2.05.pgm" successfully!
+Saved image: "data/output/4.2.05_csf.pgm"
+Processing: "data/input/4.2.06.pgm"
+csf opened: "data/input/4.2.06.pgm" successfully!
+Saved image: "data/output/4.2.06_csf.pgm"
+Processing: "data/input/4.2.07.pgm"
+csf opened: "data/input/4.2.07.pgm" successfully!
+Saved image: "data/output/4.2.07_csf.pgm"
+Processing: "data/input/5.1.09.pgm"
+csf opened: "data/input/5.1.09.pgm" successfully!
+Saved image: "data/output/5.1.09_csf.pgm"
+Processing: "data/input/5.1.10.pgm"
+csf opened: "data/input/5.1.10.pgm" successfully!
+Saved image: "data/output/5.1.10_csf.pgm"
+Processing: "data/input/5.1.11.pgm"
+csf opened: "data/input/5.1.11.pgm" successfully!
+Saved image: "data/output/5.1.11_csf.pgm"
+Processing: "data/input/5.1.12.pgm"
+csf opened: "data/input/5.1.12.pgm" successfully!
+Saved image: "data/output/5.1.12_csf.pgm"
+Processing: "data/input/5.1.13.pgm"
+csf opened: "data/input/5.1.13.pgm" successfully!
+Saved image: "data/output/5.1.13_csf.pgm"
+Processing: "data/input/5.1.14.pgm"
+csf opened: "data/input/5.1.14.pgm" successfully!
+Saved image: "data/output/5.1.14_csf.pgm"
+Processing: "data/input/5.2.08.pgm"
+csf opened: "data/input/5.2.08.pgm" successfully!
+Saved image: "data/output/5.2.08_csf.pgm"
+Processing: "data/input/5.2.09.pgm"
+csf opened: "data/input/5.2.09.pgm" successfully!
+Saved image: "data/output/5.2.09_csf.pgm"
+Processing: "data/input/5.2.10.pgm"
+csf opened: "data/input/5.2.10.pgm" successfully!
+Saved image: "data/output/5.2.10_csf.pgm"
+Processing: "data/input/5.3.01.pgm"
+csf opened: "data/input/5.3.01.pgm" successfully!
+Saved image: "data/output/5.3.01_csf.pgm"
+Processing: "data/input/5.3.02.pgm"
+csf opened: "data/input/5.3.02.pgm" successfully!
+Saved image: "data/output/5.3.02_csf.pgm"
+Processing: "data/input/7.1.01.pgm"
+csf opened: "data/input/7.1.01.pgm" successfully!
+Saved image: "data/output/7.1.01_csf.pgm"
+Processing: "data/input/7.1.02.pgm"
+csf opened: "data/input/7.1.02.pgm" successfully!
+Saved image: "data/output/7.1.02_csf.pgm"
+Processing: "data/input/7.1.03.pgm"
+csf opened: "data/input/7.1.03.pgm" successfully!
+Saved image: "data/output/7.1.03_csf.pgm"
+Processing: "data/input/7.1.04.pgm"
+csf opened: "data/input/7.1.04.pgm" successfully!
+Saved image: "data/output/7.1.04_csf.pgm"
+Processing: "data/input/7.1.05.pgm"
+csf opened: "data/input/7.1.05.pgm" successfully!
+Saved image: "data/output/7.1.05_csf.pgm"
+Processing: "data/input/7.1.06.pgm"
+csf opened: "data/input/7.1.06.pgm" successfully!
+Saved image: "data/output/7.1.06_csf.pgm"
+Processing: "data/input/7.1.07.pgm"
+csf opened: "data/input/7.1.07.pgm" successfully!
+Saved image: "data/output/7.1.07_csf.pgm"
+Processing: "data/input/7.1.08.pgm"
+csf opened: "data/input/7.1.08.pgm" successfully!
+Saved image: "data/output/7.1.08_csf.pgm"
+Processing: "data/input/7.1.09.pgm"
+csf opened: "data/input/7.1.09.pgm" successfully!
+Saved image: "data/output/7.1.09_csf.pgm"
+Processing: "data/input/7.1.10.pgm"
+csf opened: "data/input/7.1.10.pgm" successfully!
+Saved image: "data/output/7.1.10_csf.pgm"
+Processing: "data/input/7.2.01.pgm"
+csf opened: "data/input/7.2.01.pgm" successfully!
+Saved image: "data/output/7.2.01_csf.pgm"
+Processing: "data/input/boat.512.pgm"
+csf opened: "data/input/boat.512.pgm" successfully!
+Saved image: "data/output/boat.512_csf.pgm"
+Processing: "data/input/gray21.512.pgm"
+csf opened: "data/input/gray21.512.pgm" successfully!
+Saved image: "data/output/gray21.512_csf.pgm"
+Processing: "data/input/house.pgm"
+csf opened: "data/input/house.pgm" successfully!
+Saved image: "data/output/house_csf.pgm"
+Processing: "data/input/ruler.512.pgm"
+csf opened: "data/input/ruler.512.pgm" successfully!
+Saved image: "data/output/ruler.512_csf.pgm"
+Processing: "data/input/4.1.01.pgm"
+csf opened: "data/input/4.1.01.pgm" successfully!
+Saved image: "data/output/4.1.01_csf.pgm"
+Processing: "data/input/1.1.01.pgm"
+csf opened: "data/input/1.1.01.pgm" successfully!
+Saved image: "data/output/1.1.01_csf.pgm"
+Processing: "data/input/1.1.02.pgm"
+csf opened: "data/input/1.1.02.pgm" successfully!
+Saved image: "data/output/1.1.02_csf.pgm"
+Processing: "data/input/1.1.03.pgm"
+csf opened: "data/input/1.1.03.pgm" successfully!
+Saved image: "data/output/1.1.03_csf.pgm"
+Processing: "data/input/1.1.04.pgm"
+csf opened: "data/input/1.1.04.pgm" successfully!
+Saved image: "data/output/1.1.04_csf.pgm"
+Processing: "data/input/1.1.05.pgm"
+csf opened: "data/input/1.1.05.pgm" successfully!
+Saved image: "data/output/1.1.05_csf.pgm"
+Processing: "data/input/1.1.06.pgm"
+csf opened: "data/input/1.1.06.pgm" successfully!
+Saved image: "data/output/1.1.06_csf.pgm"
+Processing: "data/input/1.1.07.pgm"
+csf opened: "data/input/1.1.07.pgm" successfully!
+Saved image: "data/output/1.1.07_csf.pgm"
+Processing: "data/input/1.1.08.pgm"
+csf opened: "data/input/1.1.08.pgm" successfully!
+Saved image: "data/output/1.1.08_csf.pgm"
+Processing: "data/input/1.1.09.pgm"
+csf opened: "data/input/1.1.09.pgm" successfully!
+Saved image: "data/output/1.1.09_csf.pgm"
+Processing: "data/input/1.1.10.pgm"
+csf opened: "data/input/1.1.10.pgm" successfully!
+Saved image: "data/output/1.1.10_csf.pgm"
+Processing: "data/input/1.1.11.pgm"
+csf opened: "data/input/1.1.11.pgm" successfully!
+Saved image: "data/output/1.1.11_csf.pgm"
+Processing: "data/input/1.1.12.pgm"
+csf opened: "data/input/1.1.12.pgm" successfully!
+Saved image: "data/output/1.1.12_csf.pgm"
+Processing: "data/input/1.1.13.pgm"
+csf opened: "data/input/1.1.13.pgm" successfully!
+Saved image: "data/output/1.1.13_csf.pgm"
+Processing: "data/input/1.2.01.pgm"
+csf opened: "data/input/1.2.01.pgm" successfully!
+Saved image: "data/output/1.2.01_csf.pgm"
+Processing: "data/input/1.2.02.pgm"
+csf opened: "data/input/1.2.02.pgm" successfully!
+Saved image: "data/output/1.2.02_csf.pgm"
+Processing: "data/input/1.2.03.pgm"
+csf opened: "data/input/1.2.03.pgm" successfully!
+Saved image: "data/output/1.2.03_csf.pgm"
+Processing: "data/input/1.2.04.pgm"
+csf opened: "data/input/1.2.04.pgm" successfully!
+Saved image: "data/output/1.2.04_csf.pgm"
+Processing: "data/input/1.2.05.pgm"
+csf opened: "data/input/1.2.05.pgm" successfully!
+Saved image: "data/output/1.2.05_csf.pgm"
+Processing: "data/input/1.2.06.pgm"
+csf opened: "data/input/1.2.06.pgm" successfully!
+Saved image: "data/output/1.2.06_csf.pgm"
+Processing: "data/input/1.2.07.pgm"
+csf opened: "data/input/1.2.07.pgm" successfully!
+Saved image: "data/output/1.2.07_csf.pgm"
+Processing: "data/input/1.2.08.pgm"
+csf opened: "data/input/1.2.08.pgm" successfully!
+Saved image: "data/output/1.2.08_csf.pgm"
+Processing: "data/input/1.2.09.pgm"
+csf opened: "data/input/1.2.09.pgm" successfully!
+Saved image: "data/output/1.2.09_csf.pgm"
+Processing: "data/input/1.2.10.pgm"
+csf opened: "data/input/1.2.10.pgm" successfully!
+Saved image: "data/output/1.2.10_csf.pgm"
+Processing: "data/input/1.2.11.pgm"
+csf opened: "data/input/1.2.11.pgm" successfully!
+Saved image: "data/output/1.2.11_csf.pgm"
+Processing: "data/input/1.2.12.pgm"
+csf opened: "data/input/1.2.12.pgm" successfully!
+Saved image: "data/output/1.2.12_csf.pgm"
+Processing: "data/input/1.2.13.pgm"
+csf opened: "data/input/1.2.13.pgm" successfully!
+Saved image: "data/output/1.2.13_csf.pgm"
+Processing: "data/input/1.3.01.pgm"
+csf opened: "data/input/1.3.01.pgm" successfully!
+Saved image: "data/output/1.3.01_csf.pgm"
+Processing: "data/input/1.3.02.pgm"
+csf opened: "data/input/1.3.02.pgm" successfully!
+Saved image: "data/output/1.3.02_csf.pgm"
+Processing: "data/input/1.3.03.pgm"
+csf opened: "data/input/1.3.03.pgm" successfully!
+Saved image: "data/output/1.3.03_csf.pgm"
+Processing: "data/input/1.3.04.pgm"
+csf opened: "data/input/1.3.04.pgm" successfully!
+Saved image: "data/output/1.3.04_csf.pgm"
+Processing: "data/input/1.3.05.pgm"
+csf opened: "data/input/1.3.05.pgm" successfully!
+Saved image: "data/output/1.3.05_csf.pgm"
+Processing: "data/input/1.3.06.pgm"
+csf opened: "data/input/1.3.06.pgm" successfully!
+Saved image: "data/output/1.3.06_csf.pgm"
+Processing: "data/input/1.3.07.pgm"
+csf opened: "data/input/1.3.07.pgm" successfully!
+Saved image: "data/output/1.3.07_csf.pgm"
+Processing: "data/input/1.3.08.pgm"
+csf opened: "data/input/1.3.08.pgm" successfully!
+Saved image: "data/output/1.3.08_csf.pgm"
+Processing: "data/input/1.3.09.pgm"
+csf opened: "data/input/1.3.09.pgm" successfully!
+Saved image: "data/output/1.3.09_csf.pgm"
+Processing: "data/input/1.3.10.pgm"
+csf opened: "data/input/1.3.10.pgm" successfully!
+Saved image: "data/output/1.3.10_csf.pgm"
+Processing: "data/input/1.3.11.pgm"
+csf opened: "data/input/1.3.11.pgm" successfully!
+Saved image: "data/output/1.3.11_csf.pgm"
+Processing: "data/input/1.3.12.pgm"
+csf opened: "data/input/1.3.12.pgm" successfully!
+Saved image: "data/output/1.3.12_csf.pgm"
+Processing: "data/input/1.3.13.pgm"
+csf opened: "data/input/1.3.13.pgm" successfully!
+Saved image: "data/output/1.3.13_csf.pgm"
+Processing: "data/input/1.4.01.pgm"
+csf opened: "data/input/1.4.01.pgm" successfully!
+Saved image: "data/output/1.4.01_csf.pgm"
+Processing: "data/input/1.4.02.pgm"
+csf opened: "data/input/1.4.02.pgm" successfully!
+Saved image: "data/output/1.4.02_csf.pgm"
+Processing: "data/input/1.4.03.pgm"
+csf opened: "data/input/1.4.03.pgm" successfully!
+Saved image: "data/output/1.4.03_csf.pgm"
+Processing: "data/input/1.4.04.pgm"
+csf opened: "data/input/1.4.04.pgm" successfully!
+Saved image: "data/output/1.4.04_csf.pgm"
+Processing: "data/input/1.4.05.pgm"
+csf opened: "data/input/1.4.05.pgm" successfully!
+Saved image: "data/output/1.4.05_csf.pgm"
+Processing: "data/input/1.4.06.pgm"
+csf opened: "data/input/1.4.06.pgm" successfully!
+Saved image: "data/output/1.4.06_csf.pgm"
+Processing: "data/input/1.4.07.pgm"
+csf opened: "data/input/1.4.07.pgm" successfully!
+Saved image: "data/output/1.4.07_csf.pgm"
+Processing: "data/input/1.4.08.pgm"
+csf opened: "data/input/1.4.08.pgm" successfully!
+Saved image: "data/output/1.4.08_csf.pgm"
+Processing: "data/input/1.4.09.pgm"
+csf opened: "data/input/1.4.09.pgm" successfully!
+Saved image: "data/output/1.4.09_csf.pgm"
+Processing: "data/input/1.4.10.pgm"
+csf opened: "data/input/1.4.10.pgm" successfully!
+Saved image: "data/output/1.4.10_csf.pgm"
+Processing: "data/input/1.4.11.pgm"
+csf opened: "data/input/1.4.11.pgm" successfully!
+Saved image: "data/output/1.4.11_csf.pgm"
+Processing: "data/input/1.4.12.pgm"
+csf opened: "data/input/1.4.12.pgm" successfully!
+Saved image: "data/output/1.4.12_csf.pgm"
+Processing: "data/input/1.5.01.pgm"
+csf opened: "data/input/1.5.01.pgm" successfully!
+Saved image: "data/output/1.5.01_csf.pgm"
+Processing: "data/input/1.5.02.pgm"
+csf opened: "data/input/1.5.02.pgm" successfully!
+Saved image: "data/output/1.5.02_csf.pgm"
+Processing: "data/input/1.5.03.pgm"
+csf opened: "data/input/1.5.03.pgm" successfully!
+Saved image: "data/output/1.5.03_csf.pgm"
+Processing: "data/input/1.5.04.pgm"
+csf opened: "data/input/1.5.04.pgm" successfully!
+Saved image: "data/output/1.5.04_csf.pgm"
+Processing: "data/input/1.5.05.pgm"
+csf opened: "data/input/1.5.05.pgm" successfully!
+Saved image: "data/output/1.5.05_csf.pgm"
+Processing: "data/input/1.5.06.pgm"
+csf opened: "data/input/1.5.06.pgm" successfully!
+Saved image: "data/output/1.5.06_csf.pgm"
+Processing: "data/input/1.5.07.pgm"
+csf opened: "data/input/1.5.07.pgm" successfully!
+Saved image: "data/output/1.5.07_csf.pgm"
+Processing: "data/input/texmos1.p512.pgm"
+csf opened: "data/input/texmos1.p512.pgm" successfully!
+Saved image: "data/output/texmos1.p512_csf.pgm"
+Processing: "data/input/texmos2.p512.pgm"
+csf opened: "data/input/texmos2.p512.pgm" successfully!
+Saved image: "data/output/texmos2.p512_csf.pgm"
+Processing: "data/input/texmos2.s512.pgm"
+csf opened: "data/input/texmos2.s512.pgm" successfully!
+Saved image: "data/output/texmos2.s512_csf.pgm"
+Processing: "data/input/texmos3.p512.pgm"
+csf opened: "data/input/texmos3.p512.pgm" successfully!
+Saved image: "data/output/texmos3.p512_csf.pgm"
+Processing: "data/input/texmos3.s512.pgm"
+csf opened: "data/input/texmos3.s512.pgm" successfully!
+Saved image: "data/output/texmos3.s512_csf.pgm"
+Processing: "data/input/texmos3b.p512.pgm"
+csf opened: "data/input/texmos3b.p512.pgm" successfully!
+Saved image: "data/output/texmos3b.p512_csf.pgm"
+Processing: "data/input/6.1.01.pgm"
+csf opened: "data/input/6.1.01.pgm" successfully!
+Saved image: "data/output/6.1.01_csf.pgm"
+Processing: "data/input/6.1.02.pgm"
+csf opened: "data/input/6.1.02.pgm" successfully!
+Saved image: "data/output/6.1.02_csf.pgm"
+Processing: "data/input/6.1.03.pgm"
+csf opened: "data/input/6.1.03.pgm" successfully!
+Saved image: "data/output/6.1.03_csf.pgm"
+Processing: "data/input/6.1.04.pgm"
+csf opened: "data/input/6.1.04.pgm" successfully!
+Saved image: "data/output/6.1.04_csf.pgm"
+Processing: "data/input/6.1.05.pgm"
+csf opened: "data/input/6.1.05.pgm" successfully!
+Saved image: "data/output/6.1.05_csf.pgm"
+Processing: "data/input/6.1.06.pgm"
+csf opened: "data/input/6.1.06.pgm" successfully!
+Saved image: "data/output/6.1.06_csf.pgm"
+Processing: "data/input/6.1.07.pgm"
+csf opened: "data/input/6.1.07.pgm" successfully!
+Saved image: "data/output/6.1.07_csf.pgm"
+Processing: "data/input/6.1.08.pgm"
+csf opened: "data/input/6.1.08.pgm" successfully!
+Saved image: "data/output/6.1.08_csf.pgm"
+Processing: "data/input/6.1.09.pgm"
+csf opened: "data/input/6.1.09.pgm" successfully!
+Saved image: "data/output/6.1.09_csf.pgm"
+Processing: "data/input/6.1.10.pgm"
+csf opened: "data/input/6.1.10.pgm" successfully!
+Saved image: "data/output/6.1.10_csf.pgm"
+Processing: "data/input/6.1.11.pgm"
+csf opened: "data/input/6.1.11.pgm" successfully!
+Saved image: "data/output/6.1.11_csf.pgm"
+Processing: "data/input/6.1.12.pgm"
+csf opened: "data/input/6.1.12.pgm" successfully!
+Saved image: "data/output/6.1.12_csf.pgm"
+Processing: "data/input/6.1.13.pgm"
+csf opened: "data/input/6.1.13.pgm" successfully!
+Saved image: "data/output/6.1.13_csf.pgm"
+Processing: "data/input/6.1.14.pgm"
+csf opened: "data/input/6.1.14.pgm" successfully!
+Saved image: "data/output/6.1.14_csf.pgm"
+Processing: "data/input/6.1.15.pgm"
+csf opened: "data/input/6.1.15.pgm" successfully!
+Saved image: "data/output/6.1.15_csf.pgm"
+Processing: "data/input/6.1.16.pgm"
+csf opened: "data/input/6.1.16.pgm" successfully!
+Saved image: "data/output/6.1.16_csf.pgm"
+Processing: "data/input/6.2.01.pgm"
+csf opened: "data/input/6.2.01.pgm" successfully!
+Saved image: "data/output/6.2.01_csf.pgm"
+Processing: "data/input/6.2.02.pgm"
+csf opened: "data/input/6.2.02.pgm" successfully!
+Saved image: "data/output/6.2.02_csf.pgm"
+Processing: "data/input/6.2.03.pgm"
+csf opened: "data/input/6.2.03.pgm" successfully!
+Saved image: "data/output/6.2.03_csf.pgm"
+Processing: "data/input/6.2.04.pgm"
+csf opened: "data/input/6.2.04.pgm" successfully!
+Saved image: "data/output/6.2.04_csf.pgm"
+Processing: "data/input/6.2.05.pgm"
+csf opened: "data/input/6.2.05.pgm" successfully!
+Saved image: "data/output/6.2.05_csf.pgm"
+Processing: "data/input/6.2.06.pgm"
+csf opened: "data/input/6.2.06.pgm" successfully!
+Saved image: "data/output/6.2.06_csf.pgm"
+Processing: "data/input/6.2.07.pgm"
+csf opened: "data/input/6.2.07.pgm" successfully!
+Saved image: "data/output/6.2.07_csf.pgm"
+Processing: "data/input/6.2.08.pgm"
+csf opened: "data/input/6.2.08.pgm" successfully!
+Saved image: "data/output/6.2.08_csf.pgm"
+Processing: "data/input/6.2.09.pgm"
+csf opened: "data/input/6.2.09.pgm" successfully!
+Saved image: "data/output/6.2.09_csf.pgm"
+Processing: "data/input/6.2.10.pgm"
+csf opened: "data/input/6.2.10.pgm" successfully!
+Saved image: "data/output/6.2.10_csf.pgm"
+Processing: "data/input/6.2.11.pgm"
+csf opened: "data/input/6.2.11.pgm" successfully!
+Saved image: "data/output/6.2.11_csf.pgm"
+Processing: "data/input/6.2.12.pgm"
+csf opened: "data/input/6.2.12.pgm" successfully!
+Saved image: "data/output/6.2.12_csf.pgm"
+Processing: "data/input/6.2.13.pgm"
+csf opened: "data/input/6.2.13.pgm" successfully!
+Saved image: "data/output/6.2.13_csf.pgm"
+Processing: "data/input/6.2.14.pgm"
+csf opened: "data/input/6.2.14.pgm" successfully!
+Saved image: "data/output/6.2.14_csf.pgm"
+Processing: "data/input/6.2.15.pgm"
+csf opened: "data/input/6.2.15.pgm" successfully!
+Saved image: "data/output/6.2.15_csf.pgm"
+Processing: "data/input/6.2.16.pgm"
+csf opened: "data/input/6.2.16.pgm" successfully!
+Saved image: "data/output/6.2.16_csf.pgm"
+Processing: "data/input/6.2.17.pgm"
+csf opened: "data/input/6.2.17.pgm" successfully!
+Saved image: "data/output/6.2.17_csf.pgm"
+Processing: "data/input/6.2.18.pgm"
+csf opened: "data/input/6.2.18.pgm" successfully!
+Saved image: "data/output/6.2.18_csf.pgm"
+Processing: "data/input/6.2.19.pgm"
+csf opened: "data/input/6.2.19.pgm" successfully!
+Saved image: "data/output/6.2.19_csf.pgm"
+Processing: "data/input/6.2.20.pgm"
+csf opened: "data/input/6.2.20.pgm" successfully!
+Saved image: "data/output/6.2.20_csf.pgm"
+Processing: "data/input/6.2.21.pgm"
+csf opened: "data/input/6.2.21.pgm" successfully!
+Saved image: "data/output/6.2.21_csf.pgm"
+Processing: "data/input/6.2.22.pgm"
+csf opened: "data/input/6.2.22.pgm" successfully!
+Saved image: "data/output/6.2.22_csf.pgm"
+Processing: "data/input/6.2.23.pgm"
+csf opened: "data/input/6.2.23.pgm" successfully!
+Saved image: "data/output/6.2.23_csf.pgm"
+Processing: "data/input/6.2.24.pgm"
+csf opened: "data/input/6.2.24.pgm" successfully!
+Saved image: "data/output/6.2.24_csf.pgm"
+Processing: "data/input/6.2.25.pgm"
+csf opened: "data/input/6.2.25.pgm" successfully!
+Saved image: "data/output/6.2.25_csf.pgm"
+Processing: "data/input/6.2.26.pgm"
+csf opened: "data/input/6.2.26.pgm" successfully!
+Saved image: "data/output/6.2.26_csf.pgm"
+Processing: "data/input/6.2.27.pgm"
+csf opened: "data/input/6.2.27.pgm" successfully!
+Saved image: "data/output/6.2.27_csf.pgm"
+Processing: "data/input/6.2.28.pgm"
+csf opened: "data/input/6.2.28.pgm" successfully!
+Saved image: "data/output/6.2.28_csf.pgm"
+Processing: "data/input/6.2.29.pgm"
+csf opened: "data/input/6.2.29.pgm" successfully!
+Saved image: "data/output/6.2.29_csf.pgm"
+Processing: "data/input/6.2.30.pgm"
+csf opened: "data/input/6.2.30.pgm" successfully!
+Saved image: "data/output/6.2.30_csf.pgm"
+Processing: "data/input/6.2.31.pgm"
+csf opened: "data/input/6.2.31.pgm" successfully!
+Saved image: "data/output/6.2.31_csf.pgm"
+Processing: "data/input/6.2.32.pgm"
+csf opened: "data/input/6.2.32.pgm" successfully!
+Saved image: "data/output/6.2.32_csf.pgm"
+Processing: "data/input/6.3.01.pgm"
+csf opened: "data/input/6.3.01.pgm" successfully!
+Saved image: "data/output/6.3.01_csf.pgm"
+Processing: "data/input/6.3.02.pgm"
+csf opened: "data/input/6.3.02.pgm" successfully!
+Saved image: "data/output/6.3.02_csf.pgm"
+Processing: "data/input/6.3.03.pgm"
+csf opened: "data/input/6.3.03.pgm" successfully!
+Saved image: "data/output/6.3.03_csf.pgm"
+Processing: "data/input/6.3.04.pgm"
+csf opened: "data/input/6.3.04.pgm" successfully!
+Saved image: "data/output/6.3.04_csf.pgm"
+Processing: "data/input/6.3.05.pgm"
+csf opened: "data/input/6.3.05.pgm" successfully!
+Saved image: "data/output/6.3.05_csf.pgm"
+Processing: "data/input/6.3.06.pgm"
+csf opened: "data/input/6.3.06.pgm" successfully!
+Saved image: "data/output/6.3.06_csf.pgm"
+Processing: "data/input/6.3.07.pgm"
+csf opened: "data/input/6.3.07.pgm" successfully!
+Saved image: "data/output/6.3.07_csf.pgm"
+Processing: "data/input/6.3.08.pgm"
+csf opened: "data/input/6.3.08.pgm" successfully!
+Saved image: "data/output/6.3.08_csf.pgm"
+Processing: "data/input/6.3.09.pgm"
+csf opened: "data/input/6.3.09.pgm" successfully!
+Saved image: "data/output/6.3.09_csf.pgm"
+Processing: "data/input/6.3.10.pgm"
+csf opened: "data/input/6.3.10.pgm" successfully!
+Saved image: "data/output/6.3.10_csf.pgm"
+Processing: "data/input/6.3.11.pgm"
+csf opened: "data/input/6.3.11.pgm" successfully!
+Saved image: "data/output/6.3.11_csf.pgm"
+Processing: "data/input/motion01.512.pgm"
+csf opened: "data/input/motion01.512.pgm" successfully!
+Saved image: "data/output/motion01.512_csf.pgm"
+Processing: "data/input/motion02.512.pgm"
+csf opened: "data/input/motion02.512.pgm" successfully!
+Saved image: "data/output/motion02.512_csf.pgm"
+Processing: "data/input/motion03.512.pgm"
+csf opened: "data/input/motion03.512.pgm" successfully!
+Saved image: "data/output/motion03.512_csf.pgm"
+Processing: "data/input/motion04.512.pgm"
+csf opened: "data/input/motion04.512.pgm" successfully!
+Saved image: "data/output/motion04.512_csf.pgm"
+Processing: "data/input/motion05.512.pgm"
+csf opened: "data/input/motion05.512.pgm" successfully!
+Saved image: "data/output/motion05.512_csf.pgm"
+Processing: "data/input/motion06.512.pgm"
+csf opened: "data/input/motion06.512.pgm" successfully!
+Saved image: "data/output/motion06.512_csf.pgm"
+Processing: "data/input/motion07.512.pgm"
+csf opened: "data/input/motion07.512.pgm" successfully!
+Saved image: "data/output/motion07.512_csf.pgm"
+Processing: "data/input/motion08.512.pgm"
+csf opened: "data/input/motion08.512.pgm" successfully!
+Saved image: "data/output/motion08.512_csf.pgm"
+Processing: "data/input/motion09.512.pgm"
+csf opened: "data/input/motion09.512.pgm" successfully!
+Saved image: "data/output/motion09.512_csf.pgm"
+Processing: "data/input/motion10.512.pgm"
+csf opened: "data/input/motion10.512.pgm" successfully!
+Saved image: "data/output/motion10.512_csf.pgm"
