@@ -4,10 +4,6 @@
 
 Cuda at scale (batch files processing) example that uses a Canny Edge Detection image filter function.
 
-## Supported SM Architectures
-
-[SM 5.0 ](https://developer.nvidia.com/cuda-gpus)  [SM 5.2 ](https://developer.nvidia.com/cuda-gpus)  [SM 6.0 ](https://developer.nvidia.com/cuda-gpus)  [SM 6.1 ](https://developer.nvidia.com/cuda-gpus)  [SM 7.0 ](https://developer.nvidia.com/cuda-gpus)  [SM 7.2 ](https://developer.nvidia.com/cuda-gpus)  [SM 7.5 ](https://developer.nvidia.com/cuda-gpus)  [SM 8.0 ](https://developer.nvidia.com/cuda-gpus  [SM 9.0 ](https://developer.nvidia.com/cuda-gpus)
-
 ## Supported OSes
 
 Linux
