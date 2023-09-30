@@ -44,8 +44,8 @@ Or simply run ./run.sh:
 
 ### Input
 
-![input folder screenshot](https://raw.githubusercontent.com/Alamot/CUDAatScale/input_sample.jpg)
+![input folder screenshot](https://raw.githubusercontent.com/Alamot/CUDAatScale/master/nput_sample.jpg)
 
 ### Output
 
-![output folder screenshot](https://raw.githubusercontent.com/Alamot/CUDAatScale/output_sample.jpg)
+![output folder screenshot](https://raw.githubusercontent.com/Alamot/CUDAatScale/master/output_sample.jpg)
